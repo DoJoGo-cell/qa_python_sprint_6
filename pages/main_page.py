@@ -1,4 +1,4 @@
-import time
+import allure
 from locators.main_page_locators import MainPageLocators
 from pages.base_page import BasePageObjects
 
@@ -37,14 +37,12 @@ class MainPageObjects(BasePageObjects):
 
     def scroll_to_questions(self):
         self.scroll_to(self.questions[1])
-        time.sleep(1)
 
 
     def click_questions(self, num):
         self.click(self.questions[num])
 
     def wait_for_answers(self, num):
-        time.sleep(1)
         self.wait_element_visability(self.answers[num])
         return True
 
@@ -59,8 +57,7 @@ class MainPageObjects(BasePageObjects):
     def click_order_button_below(self):
         self.click(MainPageLocators.BUTTON_ORDER_BELOW)
 
-
+    @allure.step('Клик по логотипу Яндекса и переход в Дзен')
     def click_header_logo_yandex(self):
         self.click(MainPageLocators.HEADER_LOGO_YANDEX)
-        time.sleep(1)
         self.switch_to_new_window()

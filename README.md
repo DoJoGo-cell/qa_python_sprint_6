@@ -23,4 +23,4 @@ pytest -v tests/
 allure open allure_report
 
 ## Результат
-10 passed in 74.57s
+10 passed in 51.85s
