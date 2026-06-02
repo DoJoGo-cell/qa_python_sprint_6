@@ -55,7 +55,7 @@ class OrderConfirmationWindow:
 class OrderIsCompletedWindow:
 
     #Заголовок окна:
-    WINDOW_HEADER = (By.XPATH, '//div[contains(@class, "Order_ModalHeader")]')
+    ORDER_NUMBER = (By.XPATH, '//div[@class="Order_Text__2broi"]')
 
     #Кнопка проверки статуса заказа
     BUTTON_CHECK_STATUS = (By.XPATH, '//div[contains(@class, "Order_NextButton")]/button[text()="Посмотреть статус"]')
