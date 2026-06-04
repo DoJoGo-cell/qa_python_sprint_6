@@ -28,32 +28,36 @@ class MainPageObjects(BasePageObjects):
             8: MainPageLocators.ANSWER_EIGHT,
         }
 
+    @allure.step('Принятие файлов cookie')
     def accept_cookies(self):
         self.click(MainPageLocators.BUTTON_ACCEPT_COOKIES)
         
-
+    @allure.step('Ожидание загрузки заголовка главной страиницы')
     def wait_for_load_header(self):
         self.wait_element_visability(MainPageLocators.MAIN_PAGE_HEADER)
 
+    @allure.step('Скрол до раздела "Вопросы о важном"')
     def scroll_to_questions(self):
         self.scroll_to(self.questions[1])
 
-
+    @allure.step('Нажатие на вопрос №{num}')
     def click_questions(self, num):
         self.click(self.questions[num])
 
+    @allure.step('Ожидание появления ответа на вопрос №{num}')
     def wait_for_answers(self, num):
         self.wait_element_visability(self.answers[num])
         return True
 
-    
+    @allure.step('Нажатие на кнопку "Заказать" в верхней части главной страницы')
     def click_order_button_above(self):
         self.click(MainPageLocators.BUTTON_ORDER_ABOVE)
 
-
+    @allure.step('Скрол до кнопки "Заказать" в нижней части главной страницы')
     def scroll_to_order_button_below(self):
         self.scroll_to(MainPageLocators.BUTTON_ORDER_BELOW)
 
+    @allure.step('Нажатие на кнопку "Заказать" в нижней части главной страницы')
     def click_order_button_below(self):
         self.click(MainPageLocators.BUTTON_ORDER_BELOW)
 

@@ -1,1 +1,1 @@
-{"total":9,"items":[{"uid":"2afab85d9301067ebf3246f2d6f0f876","name":"Заказ самоката","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
+{"total":10,"items":[{"uid":"2afab85d9301067ebf3246f2d6f0f876","name":"Заказ самоката","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"0f3065a2ce6045d42ec3a77252657c16","name":"Переходы между страницами","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

@@ -5,6 +5,12 @@ class FirstFormSection:
     #Заголовок первой секции:
     ORDER_PAGE_HEADER = (By.XPATH, '//div[text()="Для кого самокат"]')
 
+    #Логотип Самокат
+    HEADER_LOGO_SCOOTER = (By.XPATH, '//a[contains(@class, "Header_LogoScooter")]')
+
+    #Кнопка принятия Куки:
+    BUTTON_ACCEPT_COOKIES = (By.XPATH, '//button[@id="rcc-confirm-button"]')
+
     #Форма заказа первой секции:
     INPUT_FIRST_NAME = (By.XPATH, '//input[@placeholder="* Имя"]')
 
